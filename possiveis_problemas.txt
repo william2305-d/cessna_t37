@@ -1,0 +1,15 @@
+/------------------------------------------- DRAG ----------------------------------------------------/
+
+CD_alpha se tornou um ganho, pode ser um possível erro, então se der errado teste ele como uma constante.
+
+Algumas variáveis do xml foram ignoradas, se não for aproximado o suficiente utilizá-las
+
+/---------------------------------------- END OF DRAG -------------------------------------------/
+
+/--------------------------------------------- SIDE ----------------------------------------------------/
+
+Delta_Side_force_due_to_beta_due_to_gear ignorado
+
+/------------------------------------------- END OF SIDE ----------------------------------------------/
+
+/-------------------------------------------- PITCH ---------------------------------------------------/
