@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <generic>
+
+  <output>
+    
+		      <line_separator>newline</line_separator>
+		      <var_separator>tab</var_separator>
+			<!-- tempo -->
+		      <chunk>
+			<name>time (sec)</name>
+			<type>float</type>
+			<format>%.4f</format>
+			<node>/sim/time/elapsed-sec</node>
+		      </chunk>
+			<!-- velocidade -->
+		      <chunk>
+			<name>VT</name>
+			<type>float</type>
+			<format>%3.2lf</format>
+			<node>/fdm/jsbsim/velocities/vt-fps</node>
+		      </chunk>
+			<!-- angulo de ataque -->
+		      <chunk>
+			<name>alpha</name>
+			<type>float</type>
+			<format>%3.2lf</format>
+			<node>/fdm/jsbsim/aero/alpha-deg</node>
+		      </chunk>
+	
+			  <!-- angulo de derrapagem -->
+		      <chunk>
+			<name>beta</name>
+			<type>float</type>
+			<format>%3.2lf</format>
+			<node>/fdm/jsbsim/aero/beta-deg</node>
+		      </chunk>
+			  <!-- angulo de rolamento -->
+		      <chunk>
+			<name>phi</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/attitude/phi-rad</node>
+		      </chunk>
+			  <!-- angulo de arfagem -->
+		      <chunk>
+			<name>theta</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/attitude/theta-rad</node>
+		      </chunk>
+			 <!-- angulo de guinada -->
+		      <chunk>
+			<name>psi</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/attitude/psi-rad</node>
+		      </chunk>
+			  <!-- componente P da velocidade angular -->
+		      <chunk>
+			<name>P</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/velocities/p-rad_sec</node>
+		      </chunk>
+			   <!-- componente Q da velocidade angular -->
+		      <chunk>
+			<name>Q</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/velocities/q-rad_sec</node>
+		      </chunk>
+			  <!-- componente R da velocidade angular -->
+		      <chunk>
+			<name>R</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/velocities/r-rad_sec</node>
+		      </chunk>
+			 <!-- Altitude -->
+		      <chunk>
+			<name>Height</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/h_b-cg-ft</node>
+		      </chunk>
+			 <!-- Deflexão do Aileron direito-->
+		      <chunk>
+			<name>Deflexao_aileron_direito</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/fcs/right-aileron-pos-deg</node>
+		      </chunk>
+		      <!-- Deflexão do Aileron esquerdo-->
+		      <chunk>
+			<name>deflexao_aileron_esquerdo</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/fcs/right-aileron-pos-deg</node>
+		      </chunk>
+			  <!-- Deflexão do profundor -->
+		      <chunk>
+			<name>deflexao_profundor</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/fcs/elevator-pos-deg</node>
+		      </chunk>
+			  <!-- Deflexão do Leme -->
+		      <chunk>
+			<name>deflexao_leme</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/fcs/rudder-pos-deg</node>
+		      </chunk>
+			<!-- Força de arrasto -->
+		      <chunk>
+			<name>D</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/forces/fwx-aero-lbs</node>
+		      </chunk>
+			  <!-- Força de sustentação -->
+		      <chunk>
+			<name>L</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/forces/fwz-aero-lbs</node>
+		      </chunk>
+			  <!-- Força lateral -->
+		      <chunk>
+			<name>Y</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/forces/fwy-aero-lbs</node>
+		      </chunk>
+			  <!-- Força tração -->
+		      <chunk>
+			<name>T</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/forces/fbx-prop-lbs</node>
+		      </chunk>
+			 <!-- Momento de rolamento -->
+		      <chunk>
+			<name>\bar_L</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/moments/l-total-lbsft</node>
+		      </chunk>
+			   <!-- Momento de arfagem -->
+		      <chunk>
+			<name>M</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/moments/m-total-lbsft</node>
+		      </chunk>
+			    <!-- Momento de guinada -->
+		      <chunk>
+			<name>N</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/moments/n-total-lbsft</node>
+		      </chunk>
+			
+			 <!-- Wingspan -->
+		      <chunk>
+			<name>N</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/metrics/bw-ft</node>
+		      </chunk>
+			  
+			  <!-- u -->
+		     <chunk>
+			<name>u</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/velocities/u-aero-fps</node>
+		      </chunk>
+			  
+			    <!-- v -->
+		     <chunk>
+			<name>u</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/velocities/v-aero-fps</node>
+		      </chunk>
+
+			    <!-- w -->
+		     <chunk>
+			<name>u</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/velocities/w-aero-fps</node>
+		      </chunk>
+
+
+  </output>
+
+ </generic>
+
+</PropertyList>
