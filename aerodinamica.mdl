@@ -87,7 +87,7 @@ Model {
       BusOutputAsStruct	      "off"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.4"
+    ComputedModelVersion    "1.5"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -135,7 +135,7 @@ Model {
 	LoadSaveID		"0"
 	Extents			[1332.0, 569.0]
 	ZoomFactor		[0.8]
-	Offset			[168.41723294773419, -47.044092281385772]
+	Offset			[-78.9867445139123, 36.509201511646438]
       }
     }
   }
@@ -145,9 +145,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "willi"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Sep 08 17:33:15 2020"
-  RTWModifiedTimeStamp	  521487191
-  ModelVersionFormat	  "1.%<AutoIncrement:4>"
+  LastModifiedDate	  "Tue Sep 08 18:11:07 2020"
+  RTWModifiedTimeStamp	  521489445
+  ModelVersionFormat	  "1.%<AutoIncrement:5>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1108,7 +1108,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "278"
+    SIDHighWatermark	    "285"
     Block {
       BlockType		      Inport
       Name		      "Altitude"
@@ -1248,7 +1248,7 @@ Model {
       }
       System {
 	Name			"Aerodinamica1"
-	Location		[1358, -8, 2740, 736]
+	Location		[2042, 0, 2739, 735]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1260,7 +1260,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"150"
+	ZoomFactor		"60"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Altitude"
@@ -6144,7 +6144,7 @@ Model {
       Name		      "Demux1"
       SID		      "269"
       Ports		      [1, 3]
-      Position		      [920, 328, 925, 512]
+      Position		      [1035, 458, 1040, 642]
       ZOrder		      28
       ShowName		      off
       Outputs		      "3"
@@ -6179,7 +6179,7 @@ Model {
       Name		      "comparacao_forca_de_arrasto"
       SID		      "273"
       Ports		      [2]
-      Position		      [1375, 57, 1410, 103]
+      Position		      [1545, 64, 1580, 111]
       ZOrder		      32
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
@@ -6192,18 +6192,23 @@ Model {
       BlockType		      Scope
       Name		      "comparacao_forca_de_sustentacao"
       SID		      "275"
-      Ports		      [1]
-      Position		      [1375, 229, 1405, 261]
+      Ports		      [2]
+      Position		      [1550, 226, 1580, 259]
       ZOrder		      34
-      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData2'),StrPVP('SaveName"
-      "','ScopeData3'))"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData3','DataLoggingLimitDataPoints',true,'DataLoggi"
+      "ngSaveFormat','Array','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals'"
+      ",'Time Domain',true),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurem"
+      "ents',true,'Version','2015b')),'Version','2015b')"
+      NumInputPorts	      "2"
     }
     Block {
       BlockType		      Scope
       Name		      "comparacao_forca_lateral"
       SID		      "274"
       Ports		      [2]
-      Position		      [1375, 156, 1405, 189]
+      Position		      [1430, 161, 1460, 194]
       ZOrder		      33
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
@@ -6216,30 +6221,94 @@ Model {
       BlockType		      Scope
       Name		      "comparacao_momento_de_arfagem"
       SID		      "278"
-      Ports		      [1]
-      Position		      [1375, 384, 1405, 416]
+      Ports		      [2]
+      Position		      [1665, 498, 1700, 542]
       ZOrder		      36
-      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData2'),StrPVP('SaveName"
-      "','ScopeData6'))"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData6','DataLoggingLimitDataPoints',true,'DataLoggi"
+      "ngSaveFormat','Array','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals'"
+      ",'Time Domain',true),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurem"
+      "ents',true,'Version','2015b')),'Version','2015b')"
+      NumInputPorts	      "2"
     }
     Block {
       BlockType		      Scope
       Name		      "comparacao_momento_de_guinada"
       SID		      "277"
-      Ports		      [1]
-      Position		      [1375, 444, 1405, 476]
+      Ports		      [2]
+      Position		      [1615, 646, 1645, 679]
       ZOrder		      37
-      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData2'),StrPVP('SaveName"
-      "','ScopeData3'),StrPVP('SaveName','ScopeData5'))"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData5','DataLoggingLimitDataPoints',true,'DataLoggi"
+      "ngSaveFormat','Array','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals'"
+      ",'Time Domain',true),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurem"
+      "ents',true,'Version','2015b')),'Version','2015b')"
+      NumInputPorts	      "2"
     }
     Block {
       BlockType		      Scope
       Name		      "comparacao_momento_de_rolamento"
       SID		      "276"
-      Ports		      [1]
-      Position		      [1375, 294, 1405, 326]
+      Ports		      [2]
+      Position		      [1510, 348, 1570, 437]
       ZOrder		      35
-      ScopeSpecificationString "C++SS(StrPVP('SaveName','ScopeData1'),StrPVP('SaveName','ScopeData4'))"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData4','DataLoggingLimitDataPoints',true,'DataLoggi"
+      "ngSaveFormat','Array','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals'"
+      ",'Time Domain',true),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurem"
+      "ents',true,'Version','2015b')),'Version','2015b')"
+      NumInputPorts	      "2"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "forca_de_arrasto"
+      SID		      "279"
+      Position		      [1280, 60, 1380, 90]
+      ZOrder		      38
+      Value		      "forca_de_arrasto"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "forca_de_sustemtacao"
+      SID		      "281"
+      Position		      [1255, 207, 1360, 243]
+      ZOrder		      40
+      Value		      "forca_de_sustentacao"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "forca_lateral"
+      SID		      "280"
+      Position		      [1280, 137, 1360, 163]
+      ZOrder		      39
+      Value		      "forca_lateral"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "momento_de_arfagem"
+      SID		      "283"
+      Position		      [1410, 485, 1530, 535]
+      ZOrder		      42
+      Value		      "momento_de_arfagem"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "momento_de_guinada"
+      SID		      "284"
+      Position		      [1420, 599, 1545, 641]
+      ZOrder		      43
+      Value		      "momento_de_guinada"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "momento_de_rolamento"
+      SID		      "285"
+      Position		      [1275, 349, 1410, 391]
+      ZOrder		      44
+      Value		      "momento_de_rolamento"
     }
     Block {
       BlockType		      Outport
@@ -6271,7 +6340,7 @@ Model {
       BlockType		      Outport
       Name		      "Momento_de_rolamento"
       SID		      "270"
-      Position		      [1185, 353, 1215, 367]
+      Position		      [1300, 483, 1330, 497]
       ZOrder		      29
       Port		      "4"
       IconDisplay	      "Port number"
@@ -6280,7 +6349,7 @@ Model {
       BlockType		      Outport
       Name		      "Momento_de_arfagem"
       SID		      "271"
-      Position		      [1185, 413, 1215, 427]
+      Position		      [1300, 543, 1330, 557]
       ZOrder		      30
       Port		      "5"
       IconDisplay	      "Port number"
@@ -6289,7 +6358,7 @@ Model {
       BlockType		      Outport
       Name		      "Momento_de_guinada"
       SID		      "272"
-      Position		      [1185, 473, 1215, 487]
+      Position		      [1370, 688, 1400, 702]
       ZOrder		      31
       Port		      "6"
       IconDisplay	      "Port number"
@@ -6410,7 +6479,7 @@ Model {
       Points		      [202, 0]
       Branch {
 	ZOrder			65
-	Points			[0, -55]
+	Points			[0, -45]
 	DstBlock		"comparacao_forca_de_arrasto"
 	DstPort			2
       }
@@ -6426,8 +6495,8 @@ Model {
       SrcPort		      2
       Points		      [202, 0]
       Branch {
-	ZOrder			66
-	Points			[0, -25]
+	ZOrder			84
+	Points			[0, -20]
 	DstBlock		"comparacao_forca_lateral"
 	DstPort			2
       }
@@ -6441,6 +6510,7 @@ Model {
       ZOrder		      44
       SrcBlock		      "Aerodinamica1"
       SrcPort		      2
+      Points		      [130, 0; 0, 130]
       DstBlock		      "Demux1"
       DstPort		      1
     }
@@ -6450,10 +6520,10 @@ Model {
       SrcPort		      3
       Points		      [205, 0]
       Branch {
-	ZOrder			55
-	Points			[0, -20]
+	ZOrder			85
+	Points			[0, -15]
 	DstBlock		"comparacao_forca_de_sustentacao"
-	DstPort			1
+	DstPort			2
       }
       Branch {
 	ZOrder			54
@@ -6467,10 +6537,10 @@ Model {
       SrcPort		      1
       Points		      [203, 0]
       Branch {
-	ZOrder			60
-	Points			[0, -50]
+	ZOrder			86
+	Points			[0, -75]
 	DstBlock		"comparacao_momento_de_rolamento"
-	DstPort			1
+	DstPort			2
       }
       Branch {
 	ZOrder			59
@@ -6484,10 +6554,10 @@ Model {
       SrcPort		      2
       Points		      [202, 0]
       Branch {
-	ZOrder			62
+	ZOrder			87
 	Points			[0, -20]
 	DstBlock		"comparacao_momento_de_arfagem"
-	DstPort			1
+	DstPort			2
       }
       Branch {
 	ZOrder			61
@@ -6499,18 +6569,63 @@ Model {
       ZOrder		      47
       SrcBlock		      "Demux1"
       SrcPort		      3
-      Points		      [203, 0]
+      Points		      [273, 0; 0, 60]
       Branch {
-	ZOrder			64
-	Points			[0, -20]
-	DstBlock		"comparacao_momento_de_guinada"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			63
+	ZOrder			94
+	Points			[0, 25]
 	DstBlock		"Momento_de_guinada"
 	DstPort			1
       }
+      Branch {
+	ZOrder			88
+	DstBlock		"comparacao_momento_de_guinada"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      89
+      SrcBlock		      "forca_de_arrasto"
+      SrcPort		      1
+      DstBlock		      "comparacao_forca_de_arrasto"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      90
+      SrcBlock		      "forca_lateral"
+      SrcPort		      1
+      Points		      [21, 0; 0, 20]
+      DstBlock		      "comparacao_forca_lateral"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      91
+      SrcBlock		      "forca_de_sustemtacao"
+      SrcPort		      1
+      Points		      [90, 0; 0, 10]
+      DstBlock		      "comparacao_forca_de_sustentacao"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      92
+      SrcBlock		      "momento_de_rolamento"
+      SrcPort		      1
+      DstBlock		      "comparacao_momento_de_rolamento"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      93
+      SrcBlock		      "momento_de_arfagem"
+      SrcPort		      1
+      DstBlock		      "comparacao_momento_de_arfagem"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      95
+      SrcBlock		      "momento_de_guinada"
+      SrcPort		      1
+      Points		      [30, 0; 0, 35]
+      DstBlock		      "comparacao_momento_de_guinada"
+      DstPort		      1
     }
   }
 }

@@ -26,6 +26,9 @@ momento_de_rolamento = data(:,20);
 momento_de_arfagem = data(:,21);
 momento_de_guinada = data(:,22);
 wing_span = data(:,23);
+u = data(:,24);
+v = data(:,25);
+w = data(:,26);
 
 %% ---------------- plot de velocidade ----------------%%
 plot(tempo,velocidade);
@@ -170,3 +173,23 @@ plot(tempo,momento_de_rolamento)
 title('tempo x momento de rolamento')
 xlabel('tempo(s)')
 ylabel('Momento (lbsft)')
+
+%% ---------------- plot de u,v e w ----------------%%
+figure
+subplot(3,1,1)
+plot(tempo,u)
+title('tempo x u')
+xlabel('tempo (s)')
+ylabel('u')
+
+subplot(3,1,2)
+plot(tempo,v)
+title('tempo x v')
+xlabel('tempo (s)')
+ylabel('v')
+
+subplot(3,1,3)
+plot(tempo,w)
+title('tempo x w')
+xlabel('tempo(s)')
+ylabel('w')
