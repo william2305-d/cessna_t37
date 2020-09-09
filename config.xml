@@ -182,7 +182,7 @@
 			  
 			    <!-- v -->
 		     <chunk>
-			<name>u</name>
+			<name>v</name>
 			<type>float</type>
 			<format>%.5f</format>
 			<node>/fdm/jsbsim/velocities/v-aero-fps</node>
@@ -190,12 +190,27 @@
 
 			    <!-- w -->
 		     <chunk>
-			<name>u</name>
+			<name>w</name>
 			<type>float</type>
 			<format>%.5f</format>
 			<node>/fdm/jsbsim/velocities/w-aero-fps</node>
 		      </chunk>
+			  
+			  <!-- Posição do flap -->
+			  <chunk>
+			<name>plap_position_norm</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/flap-pos-norm</node>
+		      </chunk>
 
+			<!-- velocidade em mach -->
+			  <chunk>
+			<name>plap_position_norm</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/velocities/mach</node>
+		      </chunk>
 
   </output>
 
