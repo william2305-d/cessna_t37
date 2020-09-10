@@ -1,8 +1,6 @@
 /------------------------------------------- DRAG ----------------------------------------------------/
 
-CD_alpha se tornou um ganho, pode ser um possível erro, então se der errado teste ele como uma constante.
-
-Algumas variáveis do xml foram ignoradas, se não for aproximado o suficiente utilizá-las
+Ignorou-se o coeficiente referente a velocidade em mach
 
 /---------------------------------------- END OF DRAG -------------------------------------------/
 
@@ -13,3 +11,12 @@ Delta_Side_force_due_to_beta_due_to_gear ignorado
 /------------------------------------------- END OF SIDE ----------------------------------------------/
 
 /-------------------------------------------- PITCH ---------------------------------------------------/
+
+Velocidade do som foi aproximada com hardcode, n foi capturada no simulador
+/------------------------------------------- END OF PITCH ----------------------------------------------/
+/-------------------------------------------- ROLL ---------------------------------------------------/
+OK OK OK OK OK OK OK OK OK 
+/------------------------------------------- END OF ROLL ----------------------------------------------/
+/-------------------------------------------- YAW ---------------------------------------------------/
+OK OK OK OK OK OK OK
+/------------------------------------------- END OF YAW ----------------------------------------------/
