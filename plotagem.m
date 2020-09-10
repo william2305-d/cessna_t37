@@ -29,6 +29,8 @@ wing_span = data(:,23);
 u = data(:,24);
 v = data(:,25);
 w = data(:,26);
+posicao_do_flap = data(:,27);
+velocidade_mach = data(:,28);
 
 %% ---------------- plot de velocidade ----------------%%
 plot(tempo,velocidade);
@@ -193,3 +195,17 @@ plot(tempo,w)
 title('tempo x w')
 xlabel('tempo(s)')
 ylabel('w')
+
+%% ---------------- plot de flap position ----------------%%
+figure
+plot(tempo,posicao_do_flap)
+title('tempo x posição do flap')
+xlabel('tempo(s)')
+ylabel('posição do flap')
+
+%% ---------------- Velocidade em mach ----------------%%
+figure
+plot(tempo,velocidade_mach)
+title('tempo x velocidade')
+xlabel('tempo(s)')
+ylabel('Velocidade (mach)')
