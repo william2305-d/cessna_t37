@@ -211,6 +211,22 @@
 			<format>%.5f</format>
 			<node>/fdm/jsbsim/velocities/mach</node>
 		      </chunk>
+			  
+			  <!-- Altitude 2 -->
+			  <chunk>
+			<name>Altitude_2</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/position/altitude-ft</node>
+		      </chunk>
+			  
+			<!-- elevator pos norm -->
+			  <chunk>
+			<name>elevator_pos_norm</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/fcs/elevator-pos-norm/</node>
+		      </chunk>
 
   </output>
 

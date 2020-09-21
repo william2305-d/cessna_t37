@@ -2,35 +2,70 @@ clc
 clear all
 close all
 
+cut = 400;
 data = importdata('test.dat');
 tempo = data(:,1);
+tempo = tempo(cut:end);
+tempo = tempo - tempo(1);
 velocidade = data(:,2);
+velocidade = velocidade(cut:end);
 alpha = data(:,3);
+alpha = alpha(cut,end);
 beta = data(:,4);
+beta = beta(cut:end);
 phi = data(:,5);
+phi = phi(cut:end);
 teta = data(:,6);
+teta = teta(cut:end);
 psi = data(:,7);
+psi = psi(cut:end);
 P = data(:,8);
+P = P(cut:end);
 Q = data(:,9);
+Q = Q(cut:end);
 R = data(:,10);
-Altitude = data(:,11);
+R = R(cut:end);
+% A altitude é dividida pelo wingspan, então depois de aquisitada é multiplicada pelo wingspan
+Altitude = data(:,11)*33.83;
+Altitude = Altitude(cut:end);
 deflexao_aileron_direito = data(:,12);
+deflexao_aileron_direito = deflexao_aileron_direito(cut:end);
 deflexao_aileron_esquerdo = data(:,13);
+deflexao_aileron_esquerdo = deflexao_aileron_esquerdo(cut:end);
 deflexao_do_profundor = data(:,14);
+deflexao_do_profundor = deflexao_do_profundor(cut:end);
 deflexao_do_leme = data(:,15);
+deflexao_do_leme = deflexao_do_leme(cut:end);
 forca_de_arrasto = data(:,16);
+forca_de_arrasto = forca_de_arrasto(cut:end);
 forca_de_sustentacao = data(:,17);
+forca_de_sustentacao = forca_de_sustentacao(cut:end);
 forca_lateral = data(:,18);
+forca_lateral = forca_lateral(cut:end);
 forca_de_tracao = data(:,19);
+forca_de_tracao = forca_de_tracao(cut:end);
 momento_de_rolamento = data(:,20);
+momento_de_rolamento = momento_de_rolamento(cut:end);
 momento_de_arfagem = data(:,21);
+momento_de_arfagem = momento_de_arfagem(cut:end);
 momento_de_guinada = data(:,22);
+momento_de_guinada = momento_de_guinada(cut:end);
 wing_span = data(:,23);
+wing_span = wing_span(cut:end);
 u = data(:,24);
+u = u(cut:end);
 v = data(:,25);
+v = v(cut:end);
 w = data(:,26);
+w = w(cut:end);
 posicao_do_flap = data(:,27);
+posicao_do_flap = posicao_do_flap(cut:end);
 velocidade_mach = data(:,28);
+velocidade_mach = velocidade_mach(cut:end);
+Altitude_2 = data(:,29);
+Altitude_2 = Altitude_2(cut:end);
+elevator_2 = data(:,30);
+elevator_2 = elevator_2(cut:end);
 
 %% ---------------- plot de velocidade ----------------%%
 plot(tempo,velocidade);
@@ -209,3 +244,10 @@ plot(tempo,velocidade_mach)
 title('tempo x velocidade')
 xlabel('tempo(s)')
 ylabel('Velocidade (mach)')
+
+%% ---------------- Velocidade 2 ----------------%%
+figure
+plot(tempo,Altitude_2)
+title('tempo x Altitude')
+xlabel('tempo(s)')
+ylabel('Altitude (ft)')
