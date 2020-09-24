@@ -198,7 +198,7 @@ CD_flap = 0.0750;
 %CD devido a posição do elevator
 CD_de = 0.0750;
 
-CDmach=...
+CD_mach=...
     [0.0000	0.0000
   0.7700	0.0000
   1.1000	0.0230

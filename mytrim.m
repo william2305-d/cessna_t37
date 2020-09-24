@@ -1,7 +1,7 @@
 % Script para trimagem do diagrama de simulacao de um Cessna 182
 
 % Carrega os parametros do Cessna 182
-c182_data;
+t37_data;
 
 % Valores iniciais para a altitude, veocidade da aeronave
 % em relacao ao vento, e para a altitude.
@@ -94,7 +94,7 @@ options(2) = 1e-4;
 options(3) = 1e-4;
 options(1) = 1;
 
-[x0,u0,y0,dx] = trim('trim_cessna182_v65',x0,u0,y0,ix,iu,iy,dx,idx,options);
+[x0,u0,y0,dx] = trim('trim_cessna_t37',x0,u0,y0,ix,iu,iy,dx,idx,options);
 
 % Zera estados de baixa amplitude.
 x0(find(abs(x0) < 1e-5)) = 0;

@@ -227,7 +227,86 @@
 			<format>%.5f</format>
 			<node>/fdm/jsbsim/fcs/elevator-pos-norm/</node>
 		      </chunk>
+			  
+			<!-- CD0 -->
+			  <chunk>
+			<name>CD0</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/CD0</node>
+		      </chunk>
+			  
+			<!-- CDalpha -->
+			  <chunk>
+			<name>CDalpha</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/CDalpha</node>
+		      </chunk>
+			  
+			<!-- CDbeta -->
+			  <chunk>
+			<name>CDbeta</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/CDbeta</node>
+		      </chunk>
+			  
+			<!-- CDde -->
+			  <chunk>
+			<name>CDde</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/CDde</node>
+		      </chunk>
+			  
+			<!-- CDflap -->
+			  <chunk>
+			<name>CDflap</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/CDflap</node>
+		      </chunk>
+			  
+			 <!-- CDgear -->
+			  <chunk>
+			<name>CDgear</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/CDgear</node>
+		      </chunk>
+			  
+			<!-- CDmach -->
+			  <chunk>
+			<name>CDmach</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/CDmach</node>
+		      </chunk>
+			  
+			<!-- CDsb -->
+			  <chunk>
+			<name>CDsb</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/CDsb</node>
+		      </chunk>
 
+			<!-- qbar-psf -->
+			  <chunk>
+			<name>qbar-psf</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/qbar-psf</node>
+		      </chunk>
+			  
+			<!-- Sw-sqft -->
+			  <chunk>
+			<name>Sw-sqft</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/metrics/Sw-sqft</node>
+		      </chunk>
   </output>
 
  </generic>

@@ -6,7 +6,7 @@ mytrim;
 % depois que a condicao de equilibrio
 % for encontrada, usando "mytrim".
 
-[A,B,C,D] = linmod('trim_cessna182',x0,u0);
+[A,B,C,D] = linmod('trim_cessna_t37',x0,u0);
 
 syslin = ss(A,B,C,D);
 
