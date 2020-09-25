@@ -2,7 +2,7 @@ clc
 clear all
 close all
 
-cut = 400;
+cut = 600;
 data = importdata('test.dat');
 tempo = data(:,1);
 tempo = tempo(cut:end);
