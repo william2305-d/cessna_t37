@@ -147,21 +147,21 @@
 			<name>\bar_L</name>
 			<type>float</type>
 			<format>%.5f</format>
-			<node>/fdm/jsbsim/moments/l-total-lbsft</node>
+			<node>/fdm/jsbsim/moments/l-aero-lbsft</node>
 		      </chunk>
 			   <!-- Momento de arfagem -->
 		      <chunk>
 			<name>M</name>
 			<type>float</type>
 			<format>%.5f</format>
-			<node>/fdm/jsbsim/moments/m-total-lbsft</node>
+			<node>/fdm/jsbsim/moments/m-aero-lbsft</node>
 		      </chunk>
 			    <!-- Momento de guinada -->
 		      <chunk>
 			<name>N</name>
 			<type>float</type>
 			<format>%.5f</format>
-			<node>/fdm/jsbsim/moments/n-total-lbsft</node>
+			<node>/fdm/jsbsim/moments/n-aero-lbsft</node>
 		      </chunk>
 			
 			 <!-- Wingspan -->
@@ -228,7 +228,7 @@
 			<node>/fdm/jsbsim/fcs/elevator-pos-norm/</node>
 		      </chunk>
 			  
-			<!-- CD0 -->
+						<!-- CD0 -->
 			  <chunk>
 			<name>CD0</name>
 			<type>float</type>
@@ -291,7 +291,7 @@
 			<format>%.5f</format>
 			<node>/fdm/jsbsim/aero/coefficient/CDsb</node>
 		      </chunk>
-
+			  
 			<!-- qbar-psf -->
 			  <chunk>
 			<name>qbar-psf</name>
@@ -307,6 +307,47 @@
 			<format>%.5f</format>
 			<node>/fdm/jsbsim/metrics/Sw-sqft</node>
 		      </chunk>
+			  
+			<!-- CM0 -->
+			  <chunk>
+			<name>CMo</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/Cmo</node>
+		      </chunk>
+			  
+			<!-- CMalpha -->
+			  <chunk>
+			<name>CMalpha</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/Cmalpha</node>
+		      </chunk>
+			  
+			<!-- CMadot -->
+			  <chunk>
+			<name>CMadot</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/Cmadot</node>
+		      </chunk>
+			  
+			<!-- CMde -->
+			  <chunk>
+			<name>CMde</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/Cmde</node>
+		      </chunk>
+			  
+			<!-- CMq -->
+			  <chunk>
+			<name>CMq</name>
+			<type>float</type>
+			<format>%.5f</format>
+			<node>/fdm/jsbsim/aero/coefficient/Cmq</node>
+		      </chunk>
+
   </output>
 
  </generic>
