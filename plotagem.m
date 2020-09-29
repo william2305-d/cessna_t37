@@ -92,7 +92,9 @@ Cmalpha = data(:,42);
 Cmalpha = Cmalpha(cut:end);
 Cmadot = data(:,43);
 Cmadot = Cmadot(cut:end);
-Cmaq = data(:,44);
+Cmde = data(:,44);
+Cmde = Cmde(cut:end);
+Cmaq = data(:,45);
 Cmaq = Cmaq(cut:end);
 
 %% ---------------- plot de velocidade ----------------%%
