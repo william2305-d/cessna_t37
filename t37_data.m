@@ -58,7 +58,7 @@ M = 4056*0.45359237;
 
 % Posicao do c.g. nominal e atual, no referencial estrutural.
 % in (inches) -> m
-Aero_RP = [0.0  0.0 -8.8]*25.4e-3;
+Aero_RP = [0.0  0.0 0.0]*25.4e-3;
 
 % Originalmente, segundo o arquivo de dados do
 % simulador FlightGear, o c.g. era dianteiro => estabilidade.

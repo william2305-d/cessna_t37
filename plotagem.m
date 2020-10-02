@@ -2,7 +2,7 @@ clc
 clear all
 close all
 
-cut = 600;
+cut = 1100;
 data = importdata('test.dat');
 tempo = data(:,1);
 tempo = tempo(cut:end);
@@ -96,6 +96,16 @@ Cmde = data(:,44);
 Cmde = Cmde(cut:end);
 Cmaq = data(:,45);
 Cmaq = Cmaq(cut:end);
+momento_de_arfagem_gear = data(:,46);
+momento_de_arfagem_gear = momento_de_arfagem_gear(cut:end);
+momento_de_arfagem_prop = data(:,47);
+momento_de_arfagem_prop = momento_de_arfagem_prop(cut:end);
+momento_de_arfagem_total = data(:,48);
+momento_de_arfagem_total = momento_de_arfagem_total(cut:end);
+momento_de_arfagem_stab = data(:,49);
+momento_de_arfagem_stab = momento_de_arfagem_stab(cut:end);
+momento_de_arfagem_wind = data(:,50);
+momento_de_arfagem_wind = momento_de_arfagem_wind(cut:end);
 
 %% ---------------- plot de velocidade ----------------%%
 plot(tempo,velocidade);
