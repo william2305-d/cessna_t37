@@ -320,6 +320,8 @@ Cn_rudder = -0.0365;
 %Adverse yaw
 Cnda=-0.0254;
 
+DCnpDf = -0.02;
+
 
 
 

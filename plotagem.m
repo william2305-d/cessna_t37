@@ -2,7 +2,7 @@ clc
 clear all
 close all
 
-cut = 1100;
+cut = 700;
 data = importdata('test.dat');
 tempo = data(:,1);
 tempo = tempo(cut:end);
@@ -31,7 +31,7 @@ Altitude = Altitude(cut:end);
 deflexao_aileron_direito = data(:,12);
 deflexao_aileron_direito = deflexao_aileron_direito(cut:end);
 deflexao_aileron_esquerdo = data(:,13);
-deflexao_aileron_esquerdo = deflexao_aileron_esquerdo(cut:end);
+deflexao_aileron_esquerdo = (-1)*deflexao_aileron_esquerdo(cut:end);
 deflexao_do_profundor = data(:,14);
 deflexao_do_profundor = deflexao_do_profundor(cut:end);
 deflexao_do_leme = data(:,15);
